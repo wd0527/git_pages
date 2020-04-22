@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        body,html{
+
+        body,
+        html {
             height: 100%;
         }
-        .big_box{
+
+        .big_box {
             width: 100%;
             height: 100%;
             background-image: linear-gradient(120deg, rgba(133, 132, 147, 0.843), rgba(255, 0, 251, 0.02));
             display: flex;
         }
-        .box{
+
+        .box {
             width: 60%;
             height: 80%;
             background-color: #fff;
-            /* border-radius: 20px; */
             margin: auto;
             background: url('./img/2.jpg') 0 0 no-repeat;
             background-size: 100% 100%;
         }
-        img{
-            width:290px;
+
+        img {
+            width: 290px;
             height: 380px;
             display: block;
             margin: 20px auto;
         }
-        h4{
+
+
+        h4 {
             text-align: center;
             height: 40px;
             line-height: 40px;
         }
-        p{
+
+        p {
             text-align: center;
             height: 30px;
             line-height: 30px;
         }
+
+        @media screen and (max-width: 750px) {
+            .box {
+                width: 90%;
+                height: 80%;
+                background-color: #fff;
+                margin: auto;
+                background: url('./img/2.jpg') 0 0 no-repeat;
+                background-size: 100% 100%;
+            }
+
+            img {
+                width: 50%;
+                height: 46%;
+                display: block;
+                margin: 20px auto;
+            }
+
+            h4 {
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+            }
+
+            p {
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="big_box">
         <div class="box">
-            <img src="./img/1.jpg" alt="">
+            <img class=".visible-xs-*" src="./img/1.jpg" alt="">
             <h4>姓名：王迪</h4>
             <p>性别：女</p>
             <p>生日：1994.05.27</p>
@@ -56,4 +96,5 @@
         </div>
     </div>
 </body>
+
 </html>
